@@ -1,0 +1,17 @@
+image: node:10.15.3
+
+pages:
+ cache:
+  paths:
+  - node_modules/
+ script:
+ - npm install -g gulp
+ - npm install
+ - npm audit fix
+ - gulp build
+ - mv dist public
+ artifacts:
+    paths:
+    - public
+ only:
+ - master
