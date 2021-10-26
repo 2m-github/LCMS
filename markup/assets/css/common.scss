@@ -26,93 +26,120 @@
     clip-path: inset(50%);
 }
 
+.inner_box {
+    margin: 0 vw(20px);
+}
 /* =====================================================================================
-                                    start
+                                    header
 ===================================================================================== */
 
-.inner_box {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.icon_close {
-    @include absoluteLT(20px,50px);
-    height: 50px;
-    color: #fff;
-    background-color: red;
-}
-
-.title_center {
-    color: $ft-black;
-    font-size: 40px;
-    text-align: center;
-}
 
 .header {
-    height: 80px;
-    border: 1px  solid $base-color; 
-    background: url('../../assets/img/sample.jpg') no-repeat center center;
+    position: relative;
+    height: vw(108px);
+    .inner_box {
+        position: relative;
+        height: 100%;
+    }
     h1 {
-        @extend .title_center;
+        @include flexBox;
+        height: 100%;
+        color: #000;
+        font-size: vw(34px);
+    }
+    .btn_menu {
+        @include absoluteLT(0, 50%);
+        transform: translateY(-50%);
+        font-size: 0;
+        img {
+            height: vw(30px);
+        }
+    }
+    .right_btn {
+        @include flexBox;
+        gap: vw(25px);
+        @include absoluteRT(0, 50%);
+        transform: translateY(-50%);
+        font-size: 0;
+        li {
+            img {
+                height: vw(37px);
+            }
+        }
     }
 }
 
-.container {
-    height: 500px;
-    h2 {
-        @extend .title_center;
-    }
-}
-
-.footer {
-    height: 80px;
-    background-color: $bg-gray;
+.menu_box {
+    width: 250px;
+    height: 100vh;
+    background: $green;
+    border-radius: 10px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    
     h1 {
-        @extend .title_center;
+        @include flexBox;
+        height: 86px;
+        color: #333;
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        img {
+            margin-right: 15px;
+        }
+    }
+    .menu {
+        padding-left:4px;
+        a {
+            @include flexStart;
+            position: relative;
+            &.fold {
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    @include absoluteRT(20px, 50%);
+                    transform: translateY(-50%);
+                    background-image: url('../img/icon_arrow_down_white.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                // &.on {
+                //     &::after {
+                //         background-image: url('../img/icon_arrow_blue_up.png');
+                //     }
+                // }
+            }
+        }
+        & > li {
+            & > a {
+                color: #333;
+                font-size: 20px;
+                
+                height: 50px;
+                padding-left: 16px;
+                &:hover,
+                &.on {
+                    
+                    font-weight: bold;
+                }
+            }
+            & > ul {
+                display: none;
+                padding: 10px 0;
+                background: #fff;
+                & > li {
+                    a {
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
 /* =====================================================================================
-                                    // end
+                                    // header
 ===================================================================================== */
       
-
-/* media query */
-
-// PC
-@include desktop {
-    html {
-        font-size: 16px;
-    }
-    body {
-        background-color: #fff;
-    }
-    .mobile-only{
-        display: none;
-    }
-    .desktop-only{
-        display: block;
-    }
-}
-
-
-// 테블릿
-@include tablet {
-    body {
-        background-color: yellow;
-    }
-    .mobile-only{
-        display: block;
-    }
-    .desktop-only{
-        display: none;
-    }
-    
-}
-
-// 모바일
-@include phone {
-    body {
-        background-color: black;
-    }
-}
