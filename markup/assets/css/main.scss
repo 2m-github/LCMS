@@ -3,6 +3,8 @@
 @import "import/base";
 
 .main {
+    display: flex;
+    flex-direction: column;
     @include absoluteLT();
     width: 100%;
     min-height: 100%;
@@ -10,27 +12,11 @@
     background-color: #5ea66a;
 }
 
-.main_top {
-    @include flexBox;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: vw(450px);
-    color: #fff;
-    .main_logo {
-        img {
-            width: vw(175px);
-        }
-    }
-    p {
-        margin-top: vw(35px);
-        font-size: vw(22px);
-    }
-    h1 {
-        font-size: vw(30px);
-    }
-}
+
 
 .main_contents {
+    flex: 1;
+    height: 100%;
     padding: vw(86px) vw(40px) 0;
     border-radius: vw(48px) vw(48px) 0 0;
     background-color: #fff;
@@ -42,13 +28,13 @@
             font-family: 'Roboto';
         }
     }
-    .hello_box {
+    .user_box {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 vw(35px) 0 vw(46px);
         p {
-            color: #747474;
+            color: $ft-gray;
             font-size: vw(24px);
             em {
                 color: #000;
@@ -67,7 +53,7 @@
                     @include flexBox;
                     height: vw(44px);
                     padding: 0 vw(24px);
-                    color: #747474;
+                    color: $ft-gray;
                     font-size: vw(20px);
                     img.setting {
                         height: vw(22px);
@@ -124,6 +110,8 @@
             margin-top: vw(20px);
             color: #292929;
             font-size: vw(24px);
+            text-align: center;
+            word-break: keep-all;
         }
     }
 }

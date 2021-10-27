@@ -21,6 +21,39 @@ $(document).ready(function(){
 			});
 		});
 	});
+    $(".btn_menu").on("click",function(){
+        $.lockBody();
+        $(".menu_box").addClass("on");
+    })
+    $(".btn_side_close").on("click",function(){
+        $.unlockBody();
+        $(".menu_box").removeClass("on");
+    })
+    $(".dim").on("click", function(){
+        $.unlockBody();
+        $(".menu_box").removeClass("on");
+    })
+
+    //datepicker
+    $("#datepicker").datepicker({
+        showButtonPanel: true,
+        changeMonth: true,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dateFormat: "yy-mm-dd",
+        closeText: "닫기", 
+        currentText: "오늘", 
+        prevText: '이전 달', 
+        nextText: '다음 달', 
+        monthNames: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'], 
+        monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'], 
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'], 
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'], 
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'], 
+        weekHeader: "주", 
+        showMonthAfterYear: true,
+        yearSuffix: '.'
+      }) 
 });
 
 $(window).scroll(function(){
@@ -57,6 +90,7 @@ $.lockBody = function() {
         height: "100%",
         overflow: "hidden"
     });
+    $(".dim").fadeIn();
 }
 
 $.unlockBody = function() {
@@ -67,6 +101,7 @@ $.unlockBody = function() {
     $wrap.css({
         top: ''
     });
+    $(".dim").fadeOut();
     window.scrollTo(0, $scrollTop);
     window.setTimeout(function () {
         $scrollTop = null;
