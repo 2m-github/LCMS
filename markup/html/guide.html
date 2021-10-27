@@ -5,7 +5,268 @@
 </head>
 <body>
     <div class="wrap">
-        
+        <!--#include file="./include/_header.html"-->
+        <div class="container">
+            <div class="green_line_box">
+                <div class="row_box">
+                    <select class="sel">
+                        <option>생활실</option>
+                    </select>
+                    <select class="sel">
+                        <option>입소자</option>
+                        <option>입소자입소자입소자</option>
+                        <option>입소자</option>
+                        <option>입소자</option>
+                    </select>
+                    <label class="checkbox">
+                        <input type="checkbox" >
+                        <span>퇴소자 포함</span>
+                    </label>
+                </div>
+            </div>
+            <div class="base_info_tit">
+                <strong>강구현</strong>(여) 37세, 4등급
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">날짜 :</span>
+                        <span class="form_cont">
+                            <!-- <input type="text" class="input_text full_size"> -->
+                            <input type="text" class="input_text datepicker" id="datepicker">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">혈압 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">맥박 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">몸무게 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">문제행동 :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" checked>
+                                    <span>유</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1">
+                                    <span>무</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">혈당(식전) :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <input type="text" style="width:10vw;" class="input_text">
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>h</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>I</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">혈당(식후 2시간) :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <input type="text" style="width:10vw;" class="input_text">
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>h</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>I</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 20vw;">낙상 :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio2" checked>
+                                    <span>유</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio2">
+                                    <span>무</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 10vw;">탈수 :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio3" checked>
+                                    <span>없음</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio3">
+                                    <span>의심</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 20vw;">소변/대변실금 :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio4" checked>
+                                    <span>유</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio4">
+                                    <span>무</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 10vw;">통증 (VAS) :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="radiobox">
+                                    <input type="radio" name="state1" checked>
+                                    <span>없음</span>
+                                </label>
+                                <div class="state">
+                                    <label class="state_radio">
+                                        <input type="radio" name="state1">
+                                        <span>약</span>
+                                    </label>
+                                    <label class="state_radio">
+                                        <input type="radio" name="state1">
+                                        <span>중</span>
+                                    </label>
+                                    <label class="state_radio">
+                                        <input type="radio" name="state1">
+                                        <span>강</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 20vw;">욕창부위 :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio6" checked>
+                                    <span>유</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio6">
+                                    <span>무</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 10vw;">섬망 :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio7" checked>
+                                    <span>없음</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio7">
+                                    <span>의심</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box align_top">
+                        <span class="form_name align_top" style="width: 20vw;">비고 :</span>
+                        <span class="form_cont">
+                            <textarea class="textarea" style="height: 14vw;" cols="30" rows="10"></textarea>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom_fixed_btn">
+            <a href="#" class="bottom_btn bg_green">저장</a>
+            <a href="#" class="bottom_btn bg_gray">취소</a>
+        </div>
     </div>
 </body>
 </html>
