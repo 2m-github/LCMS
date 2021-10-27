@@ -44,7 +44,7 @@ var paths = {
   html: {
     src: "./markup/html/**/*",
     ignore: "!./markup/html/include",
-    dest: "./dist"
+    dest: "./dist/html"
   },
   cdl: {
     index: {

@@ -65,12 +65,14 @@ $(window).scroll(function(){
 })()
 
 // popup open
-function popOpen(id){
+function popOpen(ele){
+    $(ele).show();
     $.lockBody();
 };
 
 // popup close
-function popClose(obj){
+function popClose(ele){
+    $(ele).hide();
     $.unlockBody();
 }
 

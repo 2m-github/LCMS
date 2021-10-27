@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<!--#include file="../include/_subhead.html"-->
+</head>
+<body>
+    <div class="wrap">
+        <!--#include file="../include/_header.html"-->
+        <div class="container">
+            <div class="green_line_box">
+                <div class="row_box">
+                    <select class="sel">
+                        <option>생활실</option>
+                    </select>
+                    <select class="sel">
+                        <option>입소자</option>
+                        <option>입소자입소자입소자</option>
+                        <option>입소자</option>
+                        <option>입소자</option>
+                    </select>
+                    <label class="checkbox">
+                        <input type="checkbox" >
+                        <span>퇴소자 포함</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form_title_box">
+                <h2>외래진료</h2>
+                <a href="#" class="btn_green_line">
+                    <img src="../../assets/img/icon_edit.png" alt="">
+                    <span>신규등록</span>
+                </a>
+            </div>
+
+            <div class="base_info_tit">
+                <strong>강구현</strong>(여) 37세, 4등급
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">진료시작 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                            <label class="icon_watch">
+                                <img src="../../assets/img/icon_watch.png" alt="">
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">진료종료 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                            <label class="icon_watch">
+                                <img src="../../assets/img/icon_watch.png" alt="">
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">진료비 :</span>
+                        <span class="form_cont">
+                            <input type="tel" class="input_text full_size"> <i>원</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">약제비 :</span>
+                        <span class="form_cont">
+                            <input type="tel" class="input_text full_size"> <i>원</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">청구여부 :</span>
+                        <span class="form_cont">
+                            <div class="between_box">
+                                <label class="checkbox">
+                                    <input type="checkbox" checked>
+                                    <span>청구</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>미청구</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">병원명 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box align_top">
+                        <span class="form_name align_top">사유 :</span>
+                        <span class="form_cont">
+                            <textarea class="textarea" style="height: 14vw;" cols="30" rows="10"></textarea>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box align_top">
+                        <span class="form_name align_top">조치사항 :</span>
+                        <span class="form_cont">
+                            <textarea class="textarea" style="height: 14vw;" cols="30" rows="10"></textarea>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="bottom_fixed_btn">
+            <a href="#" class="bottom_btn bg_green">저장</a>
+            <a href="#" class="bottom_btn bg_dark_gray">목록</a>
+        </div>
+    </div>
+<div class="pop" id="date_pop">
+    <div class="pop_box">
+        <h1>날짜와 시각을 선택해주세요.</h1>
+        <div class="green_line_box">
+            <div class="row_box mut">
+                <select class="sel">
+                    <option>년</option>
+                    <option>2021년</option>
+                </select>
+                <select class="sel">
+                    <option>월</option>
+                    <option>1월</option>
+                    <option>2월</option>
+                    <option>3월</option>
+                    <option>4월</option>
+                    <option>5월</option>
+                    <option>6월</option>
+                    <option>7월</option>
+                    <option>8월</option>
+                    <option>9월</option>
+                    <option>10월</option>
+                    <option>11월</option>
+                    <option>12월</option>
+                </select>
+                <select class="sel">
+                    <option>일</option>
+                    <option>1일</option>
+                    <option>2일</option>
+                    <option>3일</option>
+                    <option>4일</option>
+                    <option>5일</option>
+                    <option>6일</option>
+                    <option>7일</option>
+                    <option>8일</option>
+                    <option>9일</option>
+                    <option>10일</option>
+                    <option>11일</option>
+                    <option>12일</option>
+                    <option>13일</option>
+                    <option>14일</option>
+                    <option>15일</option>
+                    <option>16일</option>
+                    <option>18일</option>
+                    <option>19일</option>
+                    <option>20일</option>
+                    <option>21일</option>
+                    <option>22일</option>
+                    <option>23일</option>
+                    <option>24일</option>
+                    <option>25일</option>
+                    <option>26일</option>
+                    <option>27일</option>
+                    <option>28일</option>
+                    <option>29일</option>
+                    <option>30일</option>
+                    <option>31일</option>
+                </select>
+                <select class="sel">
+                    <option>시</option>
+                    <option>0시</option>
+                    <option>1시</option>
+                    <option>2시</option>
+                    <option>3시</option>
+                    <option>4시</option>
+                    <option>5시</option>
+                    <option>6시</option>
+                    <option>7시</option>
+                    <option>8시</option>
+                    <option>9시</option>
+                    <option>10시</option>
+                    <option>11시</option>
+                    <option>12시</option>
+                    <option>13시</option>
+                    <option>14시</option>
+                    <option>15시</option>
+                    <option>16시</option>
+                    <option>18시</option>
+                    <option>19시</option>
+                    <option>20시</option>
+                    <option>21시</option>
+                    <option>22시</option>
+                    <option>23시</option>
+                </select>
+                <select class="sel">
+                    <option>분</option>
+                    <option>0분</option>
+                    <option>1분</option>
+                    <option>2분</option>
+                    <option>3분</option>
+                    <option>4분</option>
+                    <option>5분</option>
+                    <option>6분</option>
+                    <option>7분</option>
+                    <option>8분</option>
+                    <option>9분</option>
+                    <option>10분</option>
+                    <option>11분</option>
+                    <option>12분</option>
+                    <option>13분</option>
+                    <option>14분</option>
+                    <option>15분</option>
+                    <option>16분</option>
+                    <option>18분</option>
+                    <option>19분</option>
+                    <option>20분</option>
+                    <option>21분</option>
+                    <option>22분</option>
+                    <option>23분</option>
+                    <option>24분</option>
+                    <option>25분</option>
+                    <option>26분</option>
+                    <option>27분</option>
+                    <option>28분</option>
+                    <option>29분</option>
+                    <option>30분</option>
+                    <option>31분</option>
+                    <option>32분</option>
+                    <option>33분</option>
+                    <option>34분</option>
+                    <option>35분</option>
+                    <option>36분</option>
+                    <option>37분</option>
+                    <option>38분</option>
+                    <option>39분</option>
+                    <option>40분</option>
+                    <option>41분</option>
+                    <option>42분</option>
+                    <option>43분</option>
+                    <option>44분</option>
+                    <option>44분</option>
+                    <option>46분</option>
+                    <option>47분</option>
+                    <option>48분</option>
+                    <option>49분</option>
+                    <option>50분</option>
+                    <option>51분</option>
+                    <option>52분</option>
+                    <option>53분</option>
+                    <option>54분</option>
+                    <option>55분</option>
+                    <option>56분</option>
+                    <option>57분</option>
+                    <option>58분</option>
+                    <option>59분</option>
+                </select>
+            </div>
+        </div>
+        <div class="btns">
+            <a href="#" class="btn bg_green">확인</a>
+            <a href="javascript:popClose('#date_pop');" class="btn bg_gray">취소</a>
+        </div>
+        <a href="javascript:popClose('#date_pop');" class="btn_pop_close">
+            <span class="hidden">닫기</span>
+        </a>
+    </div>
+</div>
+</body>
+</html>
