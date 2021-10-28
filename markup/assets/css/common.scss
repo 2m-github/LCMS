@@ -448,10 +448,30 @@
             }
         }
     }
+    &.inner_btn_box {
+        position: relative;
+        .row_box {
+            padding: 0;
+            & + .row_box {
+                .form_box {
+                    padding-top: 0;
+                }
+                
+            }
+        }
+        .right_btn {
+            @include absoluteRT(0, 50%);
+            transform: translateY(-50%);
+            width: vw(150px);
+            font-size: 0;
+            text-align: center
+        }
+    }
 }
 
 .btns {
     @include flexBox;
+    margin-top: vw(40px);
 }
 .btn {
     //@include flexBox;
@@ -460,7 +480,8 @@
     padding: 0 vw(17px);
     border-radius: vw(10px);
     font-size: vw(22px);
-    line-height: vw(43px);
+    line-height: vw(41px);
+    font-weight: 500;
     & + .btn {
         margin-left: vw(10px);
     }
@@ -469,6 +490,10 @@
     }
     &.outline {
         border: 1px solid #606060;
+        &.green {
+            color: $green;
+            border: vw(2px) solid $green;
+        }
     }
 }
 
@@ -517,6 +542,7 @@ select {
     border: 1px solid #a3a3a3;
     border-radius: vw(10px);
     
+    
 }
 .form_row {
     display: flex;
@@ -526,165 +552,193 @@ select {
     .gray_line_box {
         flex: 1;
     }
-    .form_box {
-        @include flexStart;
-        flex: 1;
-        min-height: vw(57px);
-        padding: vw(10px) vw(15px);
-        font-size: vw(22px);
-        &.align_top {
-            align-items: flex-start
-        }
+}
+.form_box {
+    @include flexStart;
+    flex: 1;
+    min-height: vw(57px);
+    padding: vw(10px) vw(15px);
+    font-size: vw(22px);
+    &.align_top {
+        align-items: flex-start
+    }
+    &.mult_box {
+        display: block;
         .form_name {
-            width: vw(110px);
-            color: #808080;
-            font-size: vw(22px);
-            line-height: 100%;
-            word-break: keep-all;
-            
+            display: inline-block;
+            vertical-align: middle;
+            & + .form_cont {
+                padding-left: 0;
+            }
         }
         .form_cont {
-            @include flexStart;
-            flex: 1;
-            padding-left: vw(10px);
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 0;
             & + .form_name {
-                margin-left: vw(30px);
-            }
-            .input_text {
-                height: vw(39px);
-                padding: 0 vw(5px);
-                background: #f6f6f6;
-                font-size: vw(22px);
-                & + * {
-                    margin-left: vw(10px);
-                }
-            }
-            i {
-                color: $ft-gray;
-                &.ns {
-                    margin: 0 vw(10px);
-                }
-            }
-            
-            .icon_watch {
                 margin-left: vw(10px);
-                font-size: 0;
-                img {
-                    width: vw(30px);
-                }
-            }
-            .radiobox {
-                & + .radiobox {
-                    
-                    justify-content: space-between;
-                }
-            }
-            .checkbox {
-                & + .checkbox {
-                    margin-left: vw(5px);
-                }
-            }
-            .between_box {
-                flex: 1;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .right_txt {
-                margin-left: auto;
-                color: #808080;
-                font-size: vw(22px);
-                strong {
-                    color: #292929;
-                }
-            }
-            .state {
-                @include flexBox;
-                .state_radio {
-                    @include flexBox;
-                    position: relative;
-                    width: vw(40px);
-                    height: vw(40px);
-                    border-radius: 50%;
-                    overflow: hidden;
-                    & + .state_radio {
-                        margin-left: vw(2px);
-                    }
-                    span {
-                        @include flexBox;
-                        @include absoluteLT();
-                        @include fullSize;
-                        color: #000;
-                        font-size: vw(20px);
-                        background: #e8e8e8;
-                    }
-                    input[type="radio"] {
-                        display: none;
-                        &:checked + span {
-                            color: #fff;
-                            background: $green;
-                        }
-                    }
-                }
-                
-            }
-            .textarea {
-                width: 100%;
-                padding: vw(5px);
-                font-size: vw(22px);
-                resize: none;
-                background: #f6f6f6;
-            }
-            
-            .radio_list {
-                @include flexStart;
-                flex-wrap: wrap;
-                width: 100%;
-                li {
-                    font-size: 0;
-                }
-                &.col2 {
-                    li {
-                        width: 50%;
-                    } 
-                }
-                &.col3 {
-                    li {
-                        width: 33.33%;
-                    } 
-                }
-                &.col4 {
-                    li {
-                        width: 25%;
-                    } 
-                }
             }
         }
     }
-    .form_rowspan {
+    .form_name {
+        width: vw(110px);
+        color: #808080;
+        font-size: vw(22px);
+        line-height: 100%;
+        word-break: keep-all;
+        & + .form_cont {
+            padding-left: vw(10px);
+        }
+    }
+    .form_cont {
         @include flexStart;
-        flex-wrap: wrap;
-        .form_rowspan_tit {
-            @include flexBox;
-            width: vw(66px);
+        flex: 1;
+        
+        & + .form_name {
+            margin-left: vw(30px);
+        }
+        .input_text {
+            height: vw(39px);
+            padding: 0 vw(5px);
+            background: #f6f6f6;
+            font-size: vw(22px);
+            & + * {
+                margin-left: vw(10px);
+            }
+        }
+        i {
+            color: $ft-gray;
+            &.ns {
+                margin: 0 vw(10px);
+            }
+        }
+        
+        .icon_watch {
+            margin-left: vw(10px);
+            font-size: 0;
+            img {
+                width: vw(30px);
+            }
+        }
+        .radiobox {
+            & + .radiobox {
+                
+                justify-content: space-between;
+            }
+        }
+        .checkbox {
+            & + .checkbox {
+                margin-left: vw(5px);
+            }
+        }
+        .between_box {
+            flex: 1;
+        }
+        .rd_list {
+            @include flexStart;
+            .radiobox {
+                & + .radiobox {
+                    margin-left: vw(15px);
+                }
+            }
+        }
+        .right_txt {
+            margin-left: auto;
             color: #808080;
             font-size: vw(22px);
+            strong {
+                color: #292929;
+            }
+        }
+        .state {
+            @include flexBox;
+            .state_radio {
+                @include flexBox;
+                position: relative;
+                width: vw(40px);
+                height: vw(40px);
+                border-radius: 50%;
+                overflow: hidden;
+                & + .state_radio {
+                    margin-left: vw(2px);
+                }
+                span {
+                    @include flexBox;
+                    @include absoluteLT();
+                    @include fullSize;
+                    color: #000;
+                    font-size: vw(20px);
+                    background: #e8e8e8;
+                }
+                input[type="radio"] {
+                    display: none;
+                    &:checked + span {
+                        color: #fff;
+                        background: $green;
+                    }
+                }
+            }
             
         }
-        .form_rowspan_cont {
-            flex: 1;
-            border-left: 1px solid #a3a3a3;
-            .form_box {
-                & + .form_box {
-                    border-top: 1px solid #a3a3a3;
-                }
-                .radiobox {
-                    margin-right: 0.5vw;
-                }
+        .textarea {
+            width: 100%;
+            padding: vw(5px);
+            font-size: vw(22px);
+            resize: none;
+            background: #f6f6f6;
+        }
+        
+        .radio_list {
+            @include flexStart;
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+                font-size: 0;
+            }
+            &.col2 {
+                li {
+                    width: 50%;
+                } 
+            }
+            &.col3 {
+                li {
+                    width: 33.33%;
+                } 
+            }
+            &.col4 {
+                li {
+                    width: 25%;
+                } 
             }
         }
     }
 }
+.form_rowspan {
+    @include flexStart;
+    flex-wrap: wrap;
+    .form_rowspan_tit {
+        @include flexBox;
+        width: vw(66px);
+        color: #808080;
+        font-size: vw(22px);
+        & + .form_rowspan_cont {
+            border-left: 1px solid #a3a3a3;
+        } 
+    }
+    .form_rowspan_cont {
+        flex: 1;
+        
+        .form_box {
+            & + .form_box {
+                border-top: 1px solid #a3a3a3;
+            }
+            .radiobox {
+                margin-right: 0.5vw;
+            }
+        }
+    }
+}
+
 .bottom_fixed_btn {
     position: fixed;
     left: 0;
@@ -888,11 +942,15 @@ a.ui-button:active, .ui-button:active,
 .mt10 {
     margin-top: vw(10px);
 }
+.mt40 {
+    margin-top: vw(40px);
+}
 .tbl01 {
     th {
         height: vw(60px);
         color: #808080;
         font-size: vw(22px);
+        font-weight: 500;
     }
     td {
         
@@ -1056,8 +1114,46 @@ a.ui-button:active, .ui-button:active,
 }
 /* //달력 */
 
+.btn_delete {
+    img {
+        width: vw(26px);
+    }
+}
 
 
+.pagging {
+    @include flexBox;
+    height: vw(100px);
+    a {
+        @include flexBox;
+        width: vw(41px);
+        height: vw(41px);
+        margin: 0 vw(10px);
+        background: #e8e8e8;
+        border-radius: 50%;
+        font-size: vw(20px);
+        font-weight: 700;
+        &.on {
+            color: #fff;
+            
+            background: $green;
+        }
+        &.btn_pagging {
+            font-size: 0 !important;
+            background: none !important;
+            img {
+                height: vw(25px);
+            }
+        }
+    }
+}
 
-
-
+.between_box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexbox {
+    @include flexBox;
+}

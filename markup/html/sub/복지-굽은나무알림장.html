@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<!--#include file="../include/_subhead.html"-->
+</head>
+<body>
+    <div class="wrap">
+        <!--#include file="../include/_header.html"-->
+        <div class="container">
+            <div class="green_line_box inner_btn_box">
+                <div class="row_box">
+                    <div class="form_box">
+                        <span class="form_name">검색기간 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text datepicker" style="width: 18vw;">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                            <i class="ns">~</i>
+                            <input type="text" class="input_text datepicker" style="width: 18vw;">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="row_box">
+                    <div class="form_box">
+                        <span class="form_cont">
+                            <label class="radiobox">
+                                <input type="radio" name="radio1" >
+                                <span>전체</span>
+                            </label>
+                            <label class="radiobox">
+                                <input type="radio" name="radio1" >
+                                <span>기관에서 가정으로</span>
+                            </label>
+                            <label class="radiobox">
+                                <input type="radio" name="radio1" >
+                                <span>가정에서 기관으로</span>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="right_btn">
+                    <a href="#" class="btn bg_green">검색</a>
+                </div>
+            </div>
+
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_rowspan">
+                        <div class="form_rowspan_cont">
+                            <div class="form_box">
+                                <span class="form_name">검색기간  :</span>
+                                <span class="form_cont">
+                                    <div class="rd_list">
+                                        <label class="radiobox">
+                                            <input type="radio" name="radio2" checked>
+                                            <span>가정에서 기관으로</span>
+                                        </label>
+                                        <label class="radiobox">
+                                            <input type="radio" name="radio2">
+                                            <span>가정에서 기관으로</span>
+                                        </label>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="form_box mult_box">
+                                <span class="form_name" style="width: 11vw;">작성자 :</span>
+                                <span class="form_cont">
+                                    박성은
+                                </span>
+                                <span class="form_name" style="width: 11vw;">작성일 :</span>
+                                <span class="form_cont">
+                                    2021-10-04
+                                </span>
+                                <span class="form_name" style="width: 16vw;">알림대상자 :</span>
+                                <span class="form_cont">
+                                    <div class="between_box">
+                                        <label class="radiobox">
+                                            <input type="radio" name="radio3" checked>
+                                            <span>전체</span>
+                                        </label>
+                                        <label class="radiobox">
+                                            <input type="radio" name="radio3">
+                                            <span>개별</span>
+                                        </label>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="form_box">
+                                <span class="form_name">제목</span>
+                                <span class="form_cont">
+                                    <input type="text" class="input_text full_size">
+                                </span>
+                            </div>
+                            <div class="form_box">
+                                <span class="form_name">내용</span>
+                                <span class="form_cont">
+                                    <textarea class="textarea" style="height: 18vw;" cols="30" rows="10"></textarea>
+                                </span>
+                            </div>
+                            <div class="form_box">
+                                <span class="form_name">사진등록</span>
+                                <span class="form_cont">
+                                    <input type="file" >
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gray_line_box mt40">
+                <table class="tbl01 full_size">
+                    <colgroup>
+                        <col style="width: 8%;">
+                        <col style="width: 15%;">
+                        <col style="width: 22%;">
+                        <col style="width: 15%;">
+                        <col style="width: 19%;">
+                        <col >
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>순번</th>
+                            <th>사진</th>
+                            <th>제목</th>
+                            <th>댓글</th>
+                            <th>작성일시</th>
+                            <th>작성자</th>
+                            <th>삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <img src="../../assets/img/sample.jpg" class="full_size" alt="">
+                            </td>
+                            <td>오늘은 어버이날입니다.</td>
+                            <td>
+                                1
+                                <br>
+                                <a href="#" class="btn outline green">보기</a>
+                            </td>
+                            <td>2021-10-04</td>
+                            <td>박성은</td>
+                            <td>
+                                <a href="#" class="btn_delete">
+                                    <img src="../../assets/img/icon_delete.png" alt="삭제">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img src="../../assets/img/sample.jpg" class="full_size" alt="">
+                            </td>
+                            <td>오늘은 어버이날입니다.</td>
+                            <td>
+                                1
+                                <br>
+                                <a href="#" class="btn outline green">보기</a>
+                            </td>
+                            <td>2021-10-04</td>
+                            <td>박성은</td>
+                            <td>
+                                <a href="#" class="btn_delete">
+                                    <img src="../../assets/img/icon_delete.png" alt="삭제">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img src="../../assets/img/sample.jpg" class="full_size" alt="">
+                            </td>
+                            <td>오늘은 어버이날입니다.</td>
+                            <td>
+                                1
+                                <br>
+                                <a href="#" class="btn outline green">보기</a>
+                            </td>
+                            <td>2021-10-04</td>
+                            <td>박성은</td>
+                            <td>
+                                <a href="#" class="btn_delete">
+                                    <img src="../../assets/img/icon_delete.png" alt="삭제">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <img src="../../assets/img/sample.jpg" class="full_size" alt="">
+                            </td>
+                            <td>오늘은 어버이날입니다.</td>
+                            <td>
+                                1
+                                <br>
+                                <a href="#" class="btn outline green">보기</a>
+                            </td>
+                            <td>2021-10-04</td>
+                            <td>박성은</td>
+                            <td>
+                                <a href="#" class="btn_delete">
+                                    <img src="../../assets/img/icon_delete.png" alt="삭제">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>
+                                <img src="../../assets/img/sample.jpg" class="full_size" alt="">
+                            </td>
+                            <td>오늘은 어버이날입니다.</td>
+                            <td>
+                                1
+                                <br>
+                                <a href="#" class="btn outline green">보기</a>
+                            </td>
+                            <td>2021-10-04</td>
+                            <td>박성은</td>
+                            <td>
+                                <a href="#" class="btn_delete">
+                                    <img src="../../assets/img/icon_delete.png" alt="삭제">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="pagging">
+                <a href="javascript:;" class="btn_pagging first">
+                    <img src="../../assets/img/pagging_first.png" alt="first">
+                </a>
+                <a href="javascript:;" class="btn_pagging prev">
+                    <img src="../../assets/img/pagging_prev.png" alt="prev">
+                </a>
+                <a href="#" class="on">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="javascript:;" class="btn_pagging next">
+                    <img src="../../assets/img/pagging_next.png" alt="next">
+                </a>
+                <a href="javascript:;" class="btn_pagging last">
+                    <img src="../../assets/img/pagging_last.png" alt="last">
+                </a>
+            </div>
+
+        </div>
+        <div class="bottom_fixed_btn">
+            <a href="#" class="bottom_btn bg_green">저장</a>
+            <a href="#" class="bottom_btn bg_dark_gray">취소</a>
+        </div>
+    </div>
+    <div class="pop" id="date_pop">
+        <div class="pop_box">
+            <h1>댓글 보기</h1>
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">대상 :</span>
+                        <span class="form_cont">
+                            박성은
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name">내용</span>
+                        <span class="form_cont">
+                            <textarea class="textarea" style="height: 14vw;" cols="30" rows="10"></textarea>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <div class="between_box">
+                        <div class="flexbox">
+                            <span class="form_name">작성자 :</span>
+                            <span class="form_cont">
+                                홍길동
+                            </span>
+                        </div>
+                        <div class="flexbox">
+                            <span class="form_name">작성일 :</span>
+                            <span class="form_cont">
+                                2021-10-10
+                            </span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn bg_green">등록</a>
+                <a href="javascript:popClose('#date_pop');" class="btn bg_gray">닫기</a>
+            </div>
+            <a href="javascript:popClose('#date_pop');" class="btn_pop_close">
+                <span class="hidden">닫기</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
