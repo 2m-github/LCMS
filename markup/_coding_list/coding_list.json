@@ -11,9 +11,23 @@
     },
     "links": {
         "공통": {
-            "메인": ["/index.html", "mainframe", "완료", ""],
-            "서브":{
-                "서브01": ["/sub/sub.html", "mainframe", "완료", ""]
+            "메인": ["/html/index.html", "mainframe", "완료", ""],
+            "간호":{
+                "로그인": ["/html/sub/로그인.html", "mainframe", "완료", ""],
+                "간호-건강관리기록부": ["/html/sub/간호-건강관리기록부.html", "mainframe", "완료", ""],
+                "간호-구강관리": ["/html/sub/간호-구강관리.html", "mainframe", "완료", ""],
+                "간호-외래진료입력": ["/html/sub/간호-외래진료입력.html", "mainframe", "완료", ""],
+                "간호-욕창관찰기록": ["/html/sub/간호-욕창관찰기록.html", "mainframe", "완료", ""],
+                "간호-욕창변화관찰": ["/html/sub/간호-욕창변화관찰.html", "mainframe", "완료", ""],
+                "간호-입원및외래": ["/html/sub/간호-입원및외래.html", "mainframe", "완료", ""],
+                "간호-투약일지,복용약내역": ["/html/sub/간호-투약일지,복용약내역.html", "mainframe", "완료", ""]
+                
+            },
+            "기곤운영":{
+                "기관운영-식재료검수일지": ["/html/sub/기관운영-식재료검수일지.html", "mainframe", "완료", ""]
+            },
+            "달력":{
+                "달력": ["/html/sub/달력.html", "mainframe", "완료", ""]
             }
         }
     }

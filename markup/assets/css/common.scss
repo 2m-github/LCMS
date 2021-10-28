@@ -26,6 +26,10 @@
     clip-path: inset(50%);
 }
 
+.color_green {
+    color: $green !important;
+}
+
 .full_size {
     width: 100% !important;
 }
@@ -57,7 +61,7 @@
 .checkbox {
     font-size: 0;
     & + .checkbox {
-        margin-left: vw(5px);
+        margin-left: vw(10px);
     }
     input[type="checkbox"] {
         width: vw(26px);
@@ -84,6 +88,11 @@
     margin-right: vw(10px);
     &:last-child {
         margin-right: 0;
+    }
+    &.interval {
+        & + .interval {
+            margin-left: vw(30px);
+        }
     }
     input[type="radio"] {
         width: vw(22px);
@@ -430,6 +439,14 @@
         align-items: center;
         padding: vw(20px);
         font-size: 0;
+        &.gray_box {
+            flex-wrap: wrap;
+            .checkbox {
+                span {
+                    color: #292929;
+                }
+            }
+        }
     }
 }
 
@@ -437,13 +454,21 @@
     @include flexBox;
 }
 .btn {
-    @include flexBox;
+    //@include flexBox;
+    display: inline-block;
     height: vw(43px);
     padding: 0 vw(17px);
     border-radius: vw(10px);
     font-size: vw(22px);
+    line-height: vw(43px);
     & + .btn {
         margin-left: vw(10px);
+    }
+    &.small {
+        height: vw(30px);
+    }
+    &.outline {
+        border: 1px solid #606060;
     }
 }
 
@@ -484,12 +509,14 @@ select {
     strong {
         font-weight: 700;
     }
+    
 }
 
 .gray_line_box {
     
     border: 1px solid #a3a3a3;
     border-radius: vw(10px);
+    
 }
 .form_row {
     display: flex;
@@ -520,6 +547,9 @@ select {
             @include flexStart;
             flex: 1;
             padding-left: vw(10px);
+            & + .form_name {
+                margin-left: vw(30px);
+            }
             .input_text {
                 height: vw(39px);
                 padding: 0 vw(5px);
@@ -531,8 +561,13 @@ select {
             }
             i {
                 color: $ft-gray;
+                &.ns {
+                    margin: 0 vw(10px);
+                }
             }
+            
             .icon_watch {
+                margin-left: vw(10px);
                 font-size: 0;
                 img {
                     width: vw(30px);
@@ -554,6 +589,14 @@ select {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+            }
+            .right_txt {
+                margin-left: auto;
+                color: #808080;
+                font-size: vw(22px);
+                strong {
+                    color: #292929;
+                }
             }
             .state {
                 @include flexBox;
@@ -591,6 +634,30 @@ select {
                 font-size: vw(22px);
                 resize: none;
                 background: #f6f6f6;
+            }
+            
+            .radio_list {
+                @include flexStart;
+                flex-wrap: wrap;
+                width: 100%;
+                li {
+                    font-size: 0;
+                }
+                &.col2 {
+                    li {
+                        width: 50%;
+                    } 
+                }
+                &.col3 {
+                    li {
+                        width: 33.33%;
+                    } 
+                }
+                &.col4 {
+                    li {
+                        width: 25%;
+                    } 
+                }
             }
         }
     }
@@ -709,6 +776,7 @@ select {
 .form_title_box {
     display: flex;
     align-items: center;
+    margin-top: vw(50px);
     margin-bottom: vw(20px);
     h2 {
         margin-right: auto;
@@ -716,23 +784,45 @@ select {
         font-size: vw(26px);
         font-weight: 500;
     }
-    .btn_green_line {
-        @include flexBox;
-        height: vw(43px);
-        padding: 0 vw(16px);
-        
-        border: 2px solid $green;
-        border-radius: vw(10px);
-        color: #292929;
-        font-size: vw(22px);
-        img {
-            height: vw(24px);
-            margin-right: vw(12px);
-            vertical-align: middle;
-        }
-        span {
-            vertical-align: middle;
-        }
+    
+}
+
+.btn_green_line {
+    @include flexBox;
+    height: vw(43px);
+    padding: 0 vw(16px);
+    
+    border: 2px solid $green;
+    border-radius: vw(10px);
+    color: #292929;
+    font-size: vw(22px);
+    img {
+        height: vw(24px);
+        margin-right: vw(12px);
+        vertical-align: middle;
+    }
+    span {
+        vertical-align: middle;
+    }
+}
+
+.btn_green_line2 {
+    @include flexBox;
+    height: vw(40px);
+    padding: 0 vw(16px);
+    margin-left: auto;
+    border: vw(2px) solid $green;
+    border-radius: vw(10px);
+    color: $green;
+    font-size: vw(22px);
+    font-weight: 500;
+    img {
+        height: vw(25px);
+        margin-right: vw(12px);
+        vertical-align: middle;
+    }
+    span {
+        vertical-align: middle;
     }
 }
 
@@ -769,3 +859,184 @@ select {
 }
 
 /* // pop */
+
+.flex_column {
+    flex-direction: column;
+}
+
+.mt10 {
+    margin-top: vw(10px);
+}
+.tbl01 {
+    th {
+        height: vw(60px);
+        color: #808080;
+        font-size: vw(22px);
+    }
+    td {
+        
+        padding: vw(15px) vw(5px);
+        border-top: 1px solid #c9c9c9;
+        color: #292929;
+        font-size: vw(22px);
+        text-align: center;
+        &.align_left {
+            text-align: left;
+        }
+        .orange_color {
+            color: #ff6035;
+        }
+        .block_box {
+            font-size: 0;
+        }
+    }
+}
+
+.h3tit {
+    margin: vw(30px) 0 vw(15px);
+    color: #292929;
+    font-size: vw(24px);
+    line-height: 100%;
+}
+
+.gray_box {
+    background-color: #f8f8f8;
+}
+
+/* 달력 */
+.calendar_ctl_box {
+    width: vw(585px);
+    margin: 0 auto;
+    
+}
+.calendar_header {
+    position: relative;
+    padding: 0 vw(100px);
+    
+    .btn {
+        &.left {
+            @include absoluteLT(0,50%);
+            transform: translateY(-50%);
+        }
+        &.right {
+            @include absoluteRT(0,50%);
+            transform: translateY(-50%);
+        }
+    }
+    .calendar_ctl {
+        @include flexBox;
+        justify-content: space-between;
+        margin: 0 auto;
+        .arrow {
+            @include flexBox;
+            width: vw(43px);
+            height: vw(43px);
+            font-size: 0;
+            line-height: 0;
+            img {
+                width: 5vw;
+            }
+        }
+        select {
+            padding-right: 25px !important;
+            background: url('../img/datepicker_select_down.jpg') no-repeat right center !important;
+            background-size: 20px !important;
+            font-size: vw(35px);
+            font-weight: 500;
+        }
+
+    }
+}
+.month_sel {
+    display: flex;
+    margin-top: vw(20px);
+    .btn {
+        flex: 1;
+        padding: 0;
+        font-size: vw(18px);
+        line-height: vw(30px);
+        text-align: center;
+        &.on {
+            color: #fff;
+            border: 1px solid $green;
+            background-color: $green;
+        }
+        & + .btn {
+            margin-left: vw(3px);
+        }
+    }
+}
+
+.calendar_area {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: vw(30px);
+}
+.calendar {
+    width: vw(1400px);
+    border: 1px solid #c9c9c9;
+    border-radius: vw(10px);   
+    table {
+        width: 100%;
+        tr {
+            &:last-child {
+                td {
+                    border-bottom: none;
+                }
+            }
+            th,
+            td {
+                
+                border-bottom: 1px solid #c9c9c9;
+                font-size: vw(22px);
+            }
+            th {
+                height: vw(47px);
+                border-top: none;
+                font-weight: 400;
+                & + th {
+                    border-left: 1px solid #c9c9c9;
+                }
+            }
+            td {
+                width: vw(200px);
+                height: vw(220px);
+                padding: vw(15px);
+                color: #292929;
+                vertical-align: top;
+                
+                &:first-child {
+                    i {
+                        color: #ff4141;
+                    }
+                }
+                &:last-child {
+                    i {
+                        color: #419aff;
+                    }
+                }
+                & + td {
+                    border-left: 1px solid #c9c9c9;
+                }
+                .other {
+                    opacity: .5;
+                }
+                .red {
+                    color: #ff4141 !important;
+                }
+                .notes {
+                    font-size: vw(22px);
+                }
+            }
+        }
+        
+    }
+}
+/* //달력 */
+
+
+
+
+
+
