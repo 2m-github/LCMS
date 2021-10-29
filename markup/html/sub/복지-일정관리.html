@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<!--#include file="../include/_subhead.html"-->
+</head>
+<body>
+    <div class="wrap">
+        <!--#include file="../include/_header.html"-->
+        <div class="container">
+            
+            
+            <div class="calendar_ctl_box">
+                <div class="gray_line_box">
+                    <div class="row_box">
+                        <div class="form_box">
+                            <label class="radiobox">
+                                <input type="radio" name="radio" >
+                                <span>시설일정</span>
+                            </label>
+                            <label class="radiobox">
+                                <input type="radio" name="radio" >
+                                <span>어르신별 일정</span>
+                            </label>
+                            <a href="#" class="btn bg_green ml_auto">오늘</a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar_header mt20">
+                    <div class="calendar_ctl">
+                        <a href="javascript:;" class="arrow prev">
+                            <img src="../../assets/img/datepicker_arrow_prev.jpg" alt="이전">
+                        </a>
+                        <div class="calendar_sel">
+                            <select>
+                                <option>2021.</option>
+                            </select>
+                            <select>
+                                <option>10.</option>
+                            </select>
+                        </div>
+                        <a href="javascript:;" class="arrow next">
+                            <img src="../../assets/img/datepicker_arrow_next.jpg" alt="다음">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="calendar_area mt20">
+                <div class="calendar">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>일</th>
+                                <th>월</th>
+                                <th>화</th>
+                                <th>수</th>
+                                <th>목</th>
+                                <th>금</th>
+                                <th>토</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <i class="other">26</i>
+                                </td>
+                                <td>
+                                    <i class="other">27</i>
+                                </td>
+                                <td>
+                                    <i class="other">28</i>
+                                </td>
+                                <td>
+                                    <i class="other">29</i>
+                                </td>
+                                <td>
+                                    <i class="other">30</i>
+                                </td>
+                                <td class="on">
+                                    <i>1</i>
+                                    <p class="note_text">
+                                        09:00 구강관리(월1회)
+                                    </p>
+                                </td>
+                                <td>
+                                    <i>1</i>
+                                    <p class="note_text">
+                                        09:00 급여비용 청구 (매월 1~10일) 
+                                    </p>
+                                    <p class="note_text">
+                                        09:00 급여제공기록지, 가정통신문, 명세서발송 (월 1회)
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>3</i>
+                                </td>
+                                <td>
+                                    <i>4</i>
+                                </td>
+                                <td>
+                                    <i>5</i>
+                                </td>
+                                <td>
+                                    <i>6</i>
+                                </td>
+                                <td>
+                                    <i>7</i>
+                                </td>
+                                <td>
+                                    <i>8</i>
+                                </td>
+                                <td>
+                                    <i class="red">9</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>10</i>
+                                </td>
+                                <td>
+                                    <i>11</i>
+                                </td>
+                                <td>
+                                    <i>12</i>
+                                </td>
+                                <td>
+                                    <i>13</i>
+                                </td>
+                                <td>
+                                    <i>14</i>
+                                </td>
+                                <td>
+                                    <i>15</i>
+                                </td>
+                                <td>
+                                    <i>16</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>17</i>
+                                </td>
+                                <td>
+                                    <i>18</i>
+                                </td>
+                                <td>
+                                    <i>19</i>
+                                </td>
+                                <td>
+                                    <i>20</i>
+                                </td>
+                                <td>
+                                    <i>21</i>
+                                </td>
+                                <td>
+                                    <i>22</i>
+                                </td>
+                                <td>
+                                    <i>23</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>24</i>
+                                </td>
+                                <td>
+                                    <i>25</i>
+                                </td>
+                                <td>
+                                    <i>26</i>
+                                </td>
+                                <td>
+                                    <i>27</i>
+                                </td>
+                                <td>
+                                    <i>28</i>
+                                </td>
+                                <td>
+                                    <i>29</i>
+                                </td>
+                                <td>
+                                    <i>30</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>24</i>
+                                </td>
+                                <td>
+                                    <i>25</i>
+                                </td>
+                                <td>
+                                    <i>26</i>
+                                </td>
+                                <td>
+                                    <i>27</i>
+                                </td>
+                                <td>
+                                    <i>28</i>
+                                </td>
+                                <td>
+                                    <i>29</i>
+                                </td>
+                                <td>
+                                    <i>30</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i>31</i>
+                                </td>
+                                <td>
+                                    <i class="other">1</i>
+                                </td>
+                                <td>
+                                    <i class="other">2</i>
+                                </td>
+                                <td>
+                                    <i class="other">3</i>
+                                </td>
+                                <td>
+                                    <i class="other">4</i>
+                                </td>
+                                <td>
+                                    <i class="other">5</i>
+                                </td>
+                                <td>
+                                    <i class="other">6</i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- pop -->
+<div class="pop" id="pop">
+    <div class="pop_box">
+        <h1>일정관리 등록</h1>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <span class="form_name" style="width: 13vw;">일정구분</span>
+                    <span class="form_cont">
+                        <select class="sel gray" style="width: 30vw;">
+                            <option>선태</option>
+                        </select>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <span class="form_name" style="width: 13vw;">일정명</span>
+                    <span class="form_cont">
+                        <input type="text" class="input_text full_size">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box align_top">
+                    <span class="form_name" style="width: 13vw;">일정내용</span>
+                    <span class="form_cont">
+                        <textarea class="textarea" style="height: 18vw;" cols="30" rows="10"></textarea>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <span class="form_name" style="width: 13vw;">일정장소</span>
+                    <span class="form_cont">
+                        <input type="text" class="input_text full_size">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <span class="form_name" style="width: 13vw;">반복구분</span>
+                    <span class="form_cont">
+                        <ul class="radio_list col4">
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" checked>
+                                    <span>반복없음</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" >
+                                    <span>매일</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" >
+                                    <span>매주</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" >
+                                    <span>매월</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1">
+                                    <span>2개월</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" >
+                                    <span>3개월</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" >
+                                    <span>6개월</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" >
+                                    <span>매년</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <div class="flexbox">
+                        <span class="form_name" style="width: 13vw;">날짜/시간</span>
+                        <span class="form_cont flex_wrap">
+                            <div class="row_flexbox">
+                                <label class="radiobox interval">
+                                    <input type="radio" name="radio2">
+                                    <span>양력</span>
+                                </label>
+                                <label class="radiobox interval">
+                                    <input type="radio" name="radio2">
+                                    <span>음력</span>
+                                </label>
+                                <input type="text" style="width: 20vw;" class="input_text datepicker ml10">
+                            </div>
+                            <div class="row_flexbox">
+                                <select class="sel gray">
+                                    <option>00</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                </select>
+                                <i class="ns">시</i>
+                                <select class="sel gray">
+                                    <option>00</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                    <option>32</option>
+                                    <option>33</option>
+                                    <option>34</option>
+                                    <option>35</option>
+                                    <option>36</option>
+                                    <option>37</option>
+                                    <option>38</option>
+                                    <option>39</option>
+                                    <option>40</option>
+                                    <option>41</option>
+                                    <option>42</option>
+                                    <option>43</option>
+                                    <option>44</option>
+                                    <option>44</option>
+                                    <option>46</option>
+                                    <option>47</option>
+                                    <option>48</option>
+                                    <option>49</option>
+                                    <option>50</option>
+                                    <option>51</option>
+                                    <option>52</option>
+                                    <option>53</option>
+                                    <option>54</option>
+                                    <option>55</option>
+                                    <option>56</option>
+                                    <option>57</option>
+                                    <option>58</option>
+                                    <option>59</option>
+                                </select>
+                                <i class="ns">분~</i>
+                                <select class="sel gray">
+                                    <option>00</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                </select>
+                                <i class="ns">시</i>
+                                <select class="sel gray">
+                                    <option>00</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                    <option>04</option>
+                                    <option>05</option>
+                                    <option>06</option>
+                                    <option>07</option>
+                                    <option>08</option>
+                                    <option>09</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                    <option>32</option>
+                                    <option>33</option>
+                                    <option>34</option>
+                                    <option>35</option>
+                                    <option>36</option>
+                                    <option>37</option>
+                                    <option>38</option>
+                                    <option>39</option>
+                                    <option>40</option>
+                                    <option>41</option>
+                                    <option>42</option>
+                                    <option>43</option>
+                                    <option>44</option>
+                                    <option>44</option>
+                                    <option>46</option>
+                                    <option>47</option>
+                                    <option>48</option>
+                                    <option>49</option>
+                                    <option>50</option>
+                                    <option>51</option>
+                                    <option>52</option>
+                                    <option>53</option>
+                                    <option>54</option>
+                                    <option>55</option>
+                                    <option>56</option>
+                                    <option>57</option>
+                                    <option>58</option>
+                                    <option>59</option>
+                                </select>
+                                <i class="ns">분</i>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <div class="flexbox">
+                        <span class="form_name" style="width: 13vw;">담당</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <div class="flexbox">
+                        <span class="form_name" style="width: 13vw;">이미지 파일 :</span>
+                        <span class="form_cont flex_wrap">
+                            <input type="file">
+                            <p class="arim color_orange">* jpg, jpeg, gif, png, bmp 만 가능</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <div class="flexbox">
+                        <span class="form_name" style="width: 13vw;">문서파일 :</span>
+                        <span class="form_cont flex_wrap">
+                            <input type="file">
+                            <p class="arim color_orange">* ppt, pptx, xls, xlsx, doc, docx, hwp, pdf 만 가능</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form_row">
+            <div class="gray_line_box">
+                <div class="form_box">
+                    <div class="flexbox">
+                        <span class="form_name" style="width: 13vw;">알림 :</span>
+                        <span class="form_cont flex_wrap">
+                            <div class="row_flexbox">
+                                <select class="sel gray">
+                                    <option>선택</option>
+                                </select>
+                                <select class="sel gray ml10">
+                                    <option>알림수신직원</option>
+                                </select>
+                                <a href="javascript:;" class="btn_pm plus ml10"><span class="hidden">+</span></a>
+                                <a href="javascript:;" class="btn_pm minus ml10"><span class="hidden">-</span></a>
+                            </div>
+                            <div class="row_flexbox">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span>문자</span>
+                                </label>
+                                <label class="checkbox ml25">
+                                    <input type="checkbox">
+                                    <span>팝업</span>
+                                </label>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <a href="#" class="btn bg_green">저장</a>
+            <a href="javascript:popClose('#pop');" class="btn bg_gray">닫기</a>
+        </div>
+        <a href="javascript:popClose('#pop');" class="btn_pop_close">
+            <span class="hidden">닫기</span>
+        </a>
+    </div>
+</div>
+</body>
+</html>

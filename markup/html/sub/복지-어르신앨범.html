@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<!--#include file="../include/_subhead.html"-->
+</head>
+<body>
+    <div class="wrap">
+        <!--#include file="../include/_header.html"-->
+        <div class="container">
+            <div class="txt_list2">
+                <p class="color_orange"><i>*</i> 검색 기간은 30일 이내로 합니다.(단, 입소자 선택 시 검색기간 제한 없음) </p>
+            </div>
+            <div class="green_line_box inner_btn_box">
+                <div class="row_box">
+                    <div class="form_box">
+                        <span class="form_name">검색기간 :</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text datepicker" style="width: 18vw;">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                            <i class="ns">~</i>
+                            <input type="text" class="input_text datepicker" style="width: 18vw;">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="row_box">
+                    <div class="form_box">
+                        <span class="form_cont">
+                            <select class="sel gray" style="width: 15vw;">
+                                <option>생활실</option>
+                            </select>
+                            <select class="sel gray" style="width: 45vw;">
+                                <option>입소자</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+                <div class="right_btn">
+                    <a href="#" class="btn bg_green">검색</a> 
+                    <a href="#" class="btn bg_gray">등록</a> 
+                </div>
+            </div>
+            <div class="img_view_box">
+                <div class="img">
+                    <img src="../../assets/img/big_sample_img.jpg" class="full_size" alt="">
+                </div>
+                <table class="tbl01 full_size">
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col >
+                        <col >
+                        <col style="width: 16%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <tr>
+                        <td>46</td>
+                        <td>테스트이미지</td>
+                        <td>등록일 : 2021-06-10</td>
+                        <td>공개</td>
+                        <td>
+                            <a href="javascript:;" class="btn_delete">
+                                <img src="../../assets/img/icon_delete.png" alt="삭제">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="img_view_box mt10">
+                <div class="img">
+                    <img src="../../assets/img/big_sample_img.jpg" class="full_size" alt="">
+                </div>
+                <table class="tbl01 full_size">
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col >
+                        <col >
+                        <col style="width: 16%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <tr>
+                        <td>45</td>
+                        <td>테스트이미지</td>
+                        <td>등록일 : 2021-06-10</td>
+                        <td>공개</td>
+                        <td>
+                            <a href="javascript:;" class="btn_delete">
+                                <img src="../../assets/img/icon_delete.png" alt="삭제">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="bottom_fixed_btn">
+            <a href="#" class="bottom_btn bg_green">저장</a>
+            <a href="#" class="bottom_btn bg_dark_gray">취소</a>
+        </div>
+    </div>
+    <!-- pop -->
+    <div class="pop" id="pop">
+        <div class="pop_box">
+            <h1>사진 등록</h1>
+            <div class="gray_bg_box">
+                <p>
+                    요양원의 전체와 관련된 사진은 ‘전체’를 선택하여 등록바랍니다. 
+                    사진파일 이름은 영문/숫자만 지원합니다.
+                </p>
+            </div>
+            <div class="green_line_box">
+                <div class="row_box">
+                    <select class="sel">
+                        <option>생활실</option>
+                    </select>
+                    <select class="sel">
+                        <option>입소자</option>
+                        <option>입소자입소</option>
+                    </select>
+                    <label class="checkbox">
+                        <input type="checkbox" >
+                        <span>공개</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" >
+                        <span>비공개</span>
+                    </label>
+                </div>
+              </div>
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 12vw;">입소일</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text datepicker full_size">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 12vw;">퇴소일</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text datepicker full_size">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: 12vw;">사진설명</span>
+                        <span class="form_cont">
+                            <input type="text" class="input_text full_size">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <div class="flexbox">
+                            <span class="form_name" style="width: 12vw;">사진선택</span>
+                            <span class="form_cont">
+                                <input type="file">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <a href="#" class="btn bg_green">등록</a>
+                <a href="javascript:popClose('#pop');" class="btn bg_gray">닫기</a>
+            </div>
+            <a href="javascript:popClose('#pop');" class="btn_pop_close">
+                <span class="hidden">닫기</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
