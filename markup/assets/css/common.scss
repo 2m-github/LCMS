@@ -436,6 +436,27 @@
     padding: vw(20px);
 }
 
+.gray_top_box {
+
+    border-radius: vw(10px);
+    margin-bottom: vw(40px);
+    background-color: #f2f2f2;
+    .row_box {
+        display: flex;
+        align-items: center;
+        padding: vw(8px);
+        font-size: 0;
+        &.gray_box {
+            flex-wrap: wrap;
+            .checkbox {
+                span {
+                    color: #292929;
+                }
+            }
+        }
+    }
+}
+
 .green_line_box {
     border: 2px solid $green;
     border-radius: vw(10px);
@@ -499,10 +520,18 @@
     }
     &.outline {
         border: 1px solid #606060;
+        background-color: #fff;
         &.green {
             color: $green;
             border: vw(2px) solid $green;
         }
+    }
+    &.midum {
+        width: auto;
+        height: auto;
+        padding: vw(15px) vw(21px);
+        font-size: vw(23px);
+        line-height: 100%;
     }
 }
 
@@ -885,10 +914,11 @@ a.ui-button:active, .ui-button:active,
 }
 
 .btn_green_line {
-    @include flexBox;
+    // @include flexBox;
+    display: inline-block;
     height: vw(43px);
     padding: 0 vw(16px);
-    
+    background-color: #fff;
     border: 2px solid $green;
     border-radius: vw(10px);
     color: #292929;
@@ -1078,7 +1108,8 @@ a.ui-button:active, .ui-button:active,
 }
 .calendar_header {
     position: relative;
-    padding: 0 vw(100px);
+    @include flexBox;
+    // padding: 0 vw(100px);
     
     .btn {
         &.left {
@@ -1094,6 +1125,9 @@ a.ui-button:active, .ui-button:active,
         @include flexBox;
         justify-content: space-between;
         margin: 0 auto;
+        .calendar_sel {
+            @include flexBox;  
+        }
         .arrow {
             @include flexBox;
             width: vw(43px);
@@ -1104,12 +1138,22 @@ a.ui-button:active, .ui-button:active,
                 width: 5vw;
             }
         }
+        .prev {
+            margin-right: vw(22px);
+        }
+        .next {
+            margin-left: vw(22px);
+        }
         select {
             padding-right: 25px !important;
             background: url('../img/datepicker_select_down.jpg') no-repeat right center !important;
             background-size: 20px !important;
             font-size: vw(35px);
             font-weight: 500;
+            &.not_icon {
+                padding-right: 0 !important;
+                background: none !important;
+            }
         }
 
     }
@@ -1171,10 +1215,12 @@ a.ui-button:active, .ui-button:active,
                 position: relative;
                 width: vw(200px);
                 height: vw(220px);
-                padding: vw(15px);
+                padding:  vw(15px);
                 color: #292929;
                 vertical-align: top;
-                
+                // i {
+                //     @include absoluteLT(vw(15px),vw(15px));
+                // }
                 &:first-child {
                     i {
                         color: #ff4141;
@@ -1190,6 +1236,9 @@ a.ui-button:active, .ui-button:active,
                 }
                 & + td {
                     border-left: 1px solid #c9c9c9;
+                }
+                .float_right {
+                    float: right;
                 }
                 .other {
                     opacity: .5;
@@ -1213,22 +1262,35 @@ a.ui-button:active, .ui-button:active,
                         vertical-align: middle;
                     }
                 }
-                .num_right {
+                .position_tr {
                     @include absoluteRT(vw(15px),vw(15px));
-                    margin-left: auto;
                 }
+                
                 .note_text {
+                    clear: both;
+                    width: 100%;
                     font-size: vw(20px);
-                    & + .note_text {
-                        margin-top: vw(15px);
-                    }
+                    margin-top: vw(15px);
+                    
                 }
             }
         }
         
     }
 }
+
 /* //달력 */
+
+.btn_datepicker {
+    display: inline-block;
+    width: vw(27px);
+    height: vw(27px);
+    font-size: 0;
+    img {
+        height: vw(28px);
+        vertical-align: middle;
+    }
+}
 
 .btn_delete {
     @include flexBox;
@@ -1365,5 +1427,49 @@ a.ui-button:active, .ui-button:active,
         height: vw(21px);
         background-color: #fff;
         transform: translate(-50%,-50%);
+    }
+}
+
+.right_total_list {
+    margin-top: vw(-34px);
+    font-size: vw(24px);
+    text-align: right;
+}
+
+.cooking_list_box {
+    margin-top: vw(25px);
+}
+.cooking_list {
+    display: flex;
+    padding: vw(20px) vw(23px);
+    border: 1px solid #a3a3a3;
+    border-radius: vw(10px);
+    dt {
+        width: vw(150px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+            font-size: vw(26px);
+        }
+    }
+    dd {
+        flex: 1;
+        display: flex;
+        
+        margin-left: vw(22px);
+        .img {
+            font-size: 0;
+            width: vw(224px);
+            border-radius: vw(10px);
+            overflow:hidden;
+        }
+        .cont {
+            flex: 1;
+            margin-left: vw(22px);
+            color: #808080;
+            font-size: vw(22px);
+            word-break: keep-all;
+        }
     }
 }

@@ -7,62 +7,8 @@
     <div class="wrap">
         <!--#include file="../include/_header.html"-->
         <div class="container">
-            <div class="green_line_box">
-                <div class="row_box">
-                    <select class="sel">
-                        <option>생활실</option>
-                    </select>
-                    <select class="sel">
-                        <option>입소자</option>
-                        <option>입소자입소자입소자</option>
-                    </select>
-                </div>
-                <div class="row_box gray_box">
-                    <div class="row_flexbox">
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>외출</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>외박</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>면회</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>기타</span>
-                        </label>
-                    </div>
-                    <div class="row_flexbox">
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>입원</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>외래진료</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>응급</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>급여제공변경</span>
-                        </label>
-                        <label class="checkbox">
-                            <input type="checkbox" >
-                            <span>어르신생신</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
             <div class="calendar_ctl_box">
                 <div class="calendar_header">
-                    <a href="javascript:;" class="btn bg_gray left">2020</a>
                     <div class="calendar_ctl">
                         <a href="javascript:;" class="arrow prev">
                             <img src="../../assets/img/datepicker_arrow_prev.jpg" alt="이전">
@@ -71,7 +17,7 @@
                             <select>
                                 <option>2021.</option>
                             </select>
-                            <select class="ml10">
+                            <select>
                                 <option>10.</option>
                             </select>
                         </div>
@@ -79,23 +25,22 @@
                             <img src="../../assets/img/datepicker_arrow_next.jpg" alt="다음">
                         </a>
                     </div>
-                    <a href="javascript:;" class="btn bg_gray right">2022</a>
                 </div>
-                <div class="month_sel">
-                    <a href="#" class="btn small outline">1월</a>
-                    <a href="#" class="btn small outline on">2월</a>
-                    <a href="#" class="btn small outline">3월</a>
-                    <a href="#" class="btn small outline">4월</a>
-                    <a href="#" class="btn small outline">5월</a>
-                    <a href="#" class="btn small outline">6월</a>
-                    <a href="#" class="btn small outline">7월</a>
-                    <a href="#" class="btn small outline">8월</a>
-                    <a href="#" class="btn small outline">9월</a>
-                    <a href="#" class="btn small outline">10월</a>
-                    <a href="#" class="btn small outline">11월</a>
-                    <a href="#" class="btn small outline">12월</a>
+                <div class="gray_top_box mt20">
+                    <div class="row_box">
+                        <select class="sel">
+                            <option>기간선택</option>
+                        </select>
+                        <select class="sel">
+                            <option>요일선택</option>
+                        </select>
+                        <a href="#" class="btn midum bg_green ml_auto">반영</a>
+                    </div>
                 </div>
             </div>
+
+            
+
             <div class="calendar_area">
                 <div class="calendar">
                     <table>
@@ -127,41 +72,22 @@
                                 <td>
                                     <i class="other">30</i>
                                 </td>
-                                <td>
+                                <td class="on">
                                     <i>1</i>
-                                    <ul class="notes">
-                                        <li>
-                                             <p>어효선 입소2</p>
-                                        </li>
-                                        <li>
-                                            <p>어효선입소1</p>
-                                        </li>
-                                        <li>
-                                            <p>은동이(외박중)</p>
-                                        </li>
-                                        <li>
-                                            <p>임경*(외박시작) </p>
-                                            <em class="color_green">10:00</em>
-                                        </li>
-                                    </ul>
+                                    <a href="#" class="btn outline green float_right ">추가/삭제</a>
+                                    <p class="note_text">
+                                        (여가) 낚시놀이 2층 프로그램실/박성연
+                                    </p>
                                 </td>
                                 <td>
                                     <i>2</i>
-                                    <ul class="notes">
-                                        <li>
-                                             <p>어효선 입소2</p>
-                                        </li>
-                                        <li>
-                                            <p>어효선입소1</p>
-                                        </li>
-                                        <li>
-                                            <p>은동이(외박중)</p>
-                                        </li>
-                                        <li>
-                                            <p>임경*(외박시작) </p>
-                                            <em class="color_green">10:00</em>
-                                        </li>
-                                    </ul>
+                                    <a href="#" class="btn outline green float_right ">추가/삭제</a>
+                                    <p class="note_text">
+                                        (여가) 낚시놀이 2층 프로그램실/박성연
+                                    </p>
+                                    <p class="note_text">
+                                        (여가) 낚시놀이 2층 프로그램실/박성연
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -306,9 +232,6 @@
                     </table>
                 </div>
             </div>
-        </div>
-        <div class="bottom_fixed_btn">
-            <a href="#" class="bottom_btn bg_green">확인</a>
         </div>
     </div>
 

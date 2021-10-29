@@ -38,7 +38,11 @@
                 "복지-물리치료일정관리": ["/html/sub/복지-물리치료일정관리.html", "mainframe", "완료", ""],
                 "복지-어르신앨범": ["/html/sub/복지-어르신앨범.html", "mainframe", "완료", ""],
                 "복지-일정관리": ["/html/sub/복지-일정관리.html", "mainframe", "완료", ""],
-                "복지-프로그램계획": ["/html/sub/복지-프로그램계획.html", "mainframe", "완료", ""]
+                "복지-프로그램계획": ["/html/sub/복지-프로그램계획.html", "mainframe", "완료", ""],
+                "복지-프로그램계획달력": ["/html/sub/복지-프로그램계획달력.html", "mainframe", "완료", ""]
+            },
+            "영양":{
+                "영양-식단표": ["/html/sub/영양-식단표.html", "mainframe", "완료", ""]
             }
         }
     }
