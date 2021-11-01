@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<!--#include file="../include/_subhead.html"-->
+</head>
+<body>
+    <div class="wrap">
+        <!--#include file="../include/_header.html"-->
+        <div class="container">
+            <div class="green_line_box">
+                <div class="row_box">
+                    <select class="sel">
+                        <option>생활실</option>
+                    </select>
+                    <select class="sel">
+                        <option>입소자</option>
+                        <option>입소자입소</option>
+                    </select>
+                    <label class="checkbox">
+                        <input type="checkbox" >
+                        <span>퇴소자 포함</span>
+                    </label>
+                    <a href="#" class="btn bg_green ml_auto">목록보기</a>
+                </div>
+            </div>
+            
+            <div class="form_row">
+                <div class="gray_line_box">
+                    <div class="form_box">
+                        <span class="form_name" style="width: auto;">대상자 :</span>
+                        <span class="form_cont">
+                            강지은
+                        </span>
+                        <span class="form_name">조사일자 :</span>
+                        <span class="form_cont">
+                            <input type="text" style="width: 18vw;" class="input_text datepicker" id="datepicker">
+                            <label for="datepicker">
+                                <img src="../../assets/img/btn_datepicker.png" alt="">
+                            </label>
+                        </span>
+                        <span class="form_name" style="width: auto;">작성자 :</span>
+                        <span class="form_cont">
+                            <input type="text" style="width: 11vw;" class="input_text">
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form_title_list">
+                <h2>신체계측/일상정보</h2>
+                <a href="javascript:;" class="btn_up">
+                    <img src="../../assets/img/icon_up_radius.png" alt="">
+                </a>
+            </div>
+            <div class="slide_box">
+                <div class="form_row">
+                    <div class="gray_line_box" style="width: auto; flex: none;">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">이름 :</span>
+                            <span class="form_cont">
+                                강지은
+                            </span>
+                        </div>
+                    </div>
+                    <div class="gray_line_box" style="width: auto; flex: none;">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">성별 :</span>
+                            <span class="form_cont">
+                                여
+                            </span>
+                        </div>
+                    </div>
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">신장 :</span>
+                            <span class="form_cont">
+                                <input type="number" style="width: 7vw;" class="input_text">
+                                <i>cm</i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">체중 :</span>
+                            <span class="form_cont">
+                                <input type="number" style="width: 7vw;" class="input_text">
+                                <i>kg</i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">치아상태 :</span>
+                            <span class="form_cont">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio1" >
+                                    <span>양호</span>
+                                </label>
+                                <label class="radiobox ml10">
+                                    <input type="radio" name="radio1" >
+                                    <span>불량</span>
+                                </label>
+                                <label class="radiobox ml10">
+                                    <input type="radio" name="radio1" >
+                                    <span>의치(상,하악)</span>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">입소전 섭취유형 :</span>
+                            <span class="form_cont">
+                                <input type="text" class="input_text full_size">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_title_list">
+                <h2>식생활/활동도</h2>
+                <a href="javascript:;" class="btn_up">
+                    <img src="../../assets/img/icon_up_radius.png" alt="">
+                </a>
+            </div>
+            <div class="slide_box">
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_rowspan">
+                            <div class="form_rowspan_tit">식사형태</div>
+                            <div class="form_rowspan_cont">
+                                <div class="form_box">
+                                    <span class="form_cont">
+                                        <ul class="radio_list">
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>일반식</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>일반식/죽</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>갈은식</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>죽</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>미음</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>경관영양</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>기타(체중조절식, 당뇨식, 저염식, 고단백식 등 질환별 식이)</span>
+                                                </label>
+                                                <div class="between_box mt10">
+                                                    <input type="text" style="margin-left: 5vw;" class="input_text full_size">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_rowspan">
+                            <div class="form_rowspan_tit">식사섭취 상태</div>
+                            <div class="form_rowspan_cont">
+                                <div class="form_box">
+                                    <span class="form_cont">
+                                        <ul class="radio_list">
+                                            <li>
+                                                <label class="radiobox">
+                                                    <input type="radio" name="radio2" >
+                                                    <span>양호</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radiobox">
+                                                    <input type="radio" name="radio2" >
+                                                    <span>불량</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="radiobox">
+                                                    <input type="radio" name="radio2" >
+                                                    <span>심한불량</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_title_list">
+                <h2>식사시 문제점</h2>
+                <a href="javascript:;" class="btn_up">
+                    <img src="../../assets/img/icon_up_radius.png" alt="">
+                </a>
+            </div>
+            <div class="slide_box">
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_rowspan">
+                            <div class="form_rowspan_tit">저작상태</div>
+                            <div class="form_rowspan_cont">
+                                <div class="form_box">
+                                    <span class="form_cont">
+                                        <ul class="radio_list">
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>무엇이든 씹을 수 있다.</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>부드러운 것은 씹을 수 있다.</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>빠는 것이라면 가능하다.</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>씹을 수 없다. / 씹을 일이 없다.</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_rowspan">
+                            <div class="form_rowspan_tit">연하상태</div>
+                            <div class="form_rowspan_cont">
+                                <div class="form_box">
+                                    <span class="form_cont">
+                                        <ul class="radio_list">
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>무엇이든 삼킬 수 있다.</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>가끔 사레 들린다.</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>자주 심하게 사레 들린다.</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>삼킬 수 없다.</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_rowspan">
+                            <div class="form_rowspan_tit">문제원인</div>
+                            <div class="form_rowspan_cont">
+                                <div class="form_box">
+                                    <span class="form_cont">
+                                        <ul class="radio_list col3">
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>소화불량</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>식욕저하</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>우울증</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>변비</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>설사</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>편식</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>치매</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>구토</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>공복감</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>불규칙한식사</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>식사거부</span>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" >
+                                                    <span>뇌졸증</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">식품알레르기/불내증 :</span>
+                            <span class="form_cont">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio3" >
+                                    <span>유</span>
+                                </label>
+                                <label class="radiobox ml20">
+                                    <input type="radio" name="radio3" >
+                                    <span>무</span>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: auto;">식사속도 :</span>
+                            <span class="form_cont">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio4" >
+                                    <span>보통</span>
+                                </label>
+                                <label class="radiobox ml20">
+                                    <input type="radio" name="radio4" >
+                                    <span>빠름</span>
+                                </label>
+                                <label class="radiobox ml20">
+                                    <input type="radio" name="radio4" >
+                                    <span>느림</span>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_title_list">
+                <h2>선호도 파악</h2>
+                <a href="javascript:;" class="btn_up">
+                    <img src="../../assets/img/icon_up_radius.png" alt="">
+                </a>
+            </div>
+            <div class="slide_box">
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: 18vw;">선호음식  :</span>
+                            <span class="form_cont">
+                                <input type="text" class="input_text full_size">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: 18vw;">비선호음식  :</span>
+                            <span class="form_cont">
+                                <input type="text" class="input_text full_size">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_title_list">
+                <h2>영양평가</h2>
+                <span>식습관 및 평소 식사섭취상태에 대한 평가</span>
+                <a href="javascript:;" class="btn_up">
+                    <img src="../../assets/img/icon_up_radius.png" alt="">
+                </a>
+            </div>
+            <div class="slide_box">
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: 18vw;">장점 :</span>
+                            <span class="form_cont">
+                                <input type="text" class="input_text full_size">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: 18vw;">단점 :</span>
+                            <span class="form_cont">
+                                <input type="text" class="input_text full_size">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: 18vw;">영양권장량 :</span>
+                            <span class="form_cont">
+                                <input type="number" style="width: 10vw;" class="input_text">
+                            </span>
+                            <span class="form_name ml0" style="width: auto;">kg / 권장량</span>
+                            <span class="form_cont">
+                                <input type="number" style="width: 10vw;" class="input_text">
+                            </span>
+                            <span class="form_name ml0" style="width: auto;"> kcal / 섭취량</span>
+                            <span class="form_cont">
+                                <input type="number" style="width: 10vw;" class="input_text">
+                                <i>kcal</i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box align_top">
+                            <span class="form_name" style="width: 18vw;">영양총평 :</span>
+                            <span class="form_cont flex_wrap">
+                                <label class="radiobox">
+                                    <input type="radio" name="radio5" >
+                                    <span>양호</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio5" >
+                                    <span>불량</span>
+                                </label>
+                                <label class="radiobox">
+                                    <input type="radio" name="radio5" >
+                                    <span>심한불량</span>
+                                </label>
+                                <dl class="txts_list mt10">
+                                    <dt>양호</dt>
+                                    <dd>건강 및 섭식, 영양 등에 문제가 없는 상태</dd>
+                                </dl>
+                                <dl class="txts_list">
+                                    <dt>불량</dt>
+                                    <dd>건강 및 섭식, 영양 등에 문제가 있어 세심한 관찰이 요구되는 상태(여윔, 비만, 부종 포함)</dd>
+                                </dl>
+                                <dl class="txts_list">
+                                    <dt>심한불량</dt>
+                                    <dd>극도의 건강 및 섭식, 영양 등에 문제가 있어 의료적처치가 필요한 상태(극도의 여윔, 비만, 부종 포함)</dd>
+                                </dl>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form_title_list">
+                <h2>영양평가</h2>
+                <span>식습관 및 평소 식사섭취상태에 대한 평가</span>
+                <a href="javascript:;" class="btn_up">
+                    <img src="../../assets/img/icon_up_radius.png" alt="">
+                </a>
+            </div>
+            <div class="slide_box">
+                <div class="form_row">
+                    <div class="gray_line_box">
+                        <div class="form_box">
+                            <span class="form_name" style="width: 18vw;">영양상태 욕구사정 서술 (판단근거)</span>
+                            <span class="form_cont flex_wrap">
+                                <textarea class="textarea" style="height: 18vw;" cols="30" rows="10"></textarea>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_fixed_btn">
+            <a href="#" class="bottom_btn bg_green">영양상태영역만 저장</a>
+            <a href="#" class="bottom_btn bg_hi_gray">영양상태영역만 삭제</a>
+        </div>
+    </div>
+
+</body>
+</html>
