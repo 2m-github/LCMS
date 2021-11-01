@@ -282,21 +282,21 @@
         display: flex;
         flex-wrap: wrap;
         margin: vw(50px) vw(40px) 0;
-        border: 1px solid #30672f;
+        border: 1px solid #238340;
         li {
             width: 50%;
             &:nth-child(even) {
-                border-left: 1px solid #30672f;
+                border-left: 1px solid #238340;
             }
             &:nth-child(1),
             &:nth-child(2) {
-                border-bottom: 1px solid #30672f;
+                border-bottom: 1px solid #238340;
             }
             & > a {
                 display: flex;
                 align-items: center;
                 height: vw(118px);
-                background-color: #4a9256;
+                background-color: #26944f;
                 img {
                     width: vw(100px);
                 }
