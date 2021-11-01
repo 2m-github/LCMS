@@ -34,6 +34,14 @@ $(document).ready(function(){
         $(".menu_box").removeClass("on");
     })
 
+    $(".degree_list").each(function(index){
+        $(this).find(".btn_change input").on("change",function(){
+            $(this).parents(".degree_list").find("input").val($(this).next("span").text());
+            $(this).parents(".degree_list").next(".degree_txts").find("dl").removeClass("on");
+            $(this).parents(".degree_list").next(".degree_txts").find("dl").eq($(this).next("span").text() - 1).addClass("on");
+        })
+    })
+
     //datepicker
     $(".datepicker").each(function(index){
         var $this = $(this);

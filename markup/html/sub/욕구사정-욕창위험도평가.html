@@ -7,23 +7,25 @@
     <div class="wrap">
         <!--#include file="../include/_header.html"-->
         <div class="container">
-            <div class="green_line_box">
-                <div class="row_box">
-                    <select class="sel">
-                        <option>생활실</option>
-                    </select>
-                    <select class="sel">
-                        <option>입소자</option>
-                        <option>입소자입소</option>
-                    </select>
-                    <label class="checkbox">
-                        <input type="checkbox" >
-                        <span>퇴소자 포함</span>
-                    </label>
-                    <a href="#" class="btn bg_green ml_auto">목록보기</a>
+            <div class="green_fixed">
+                <div class="green_line_box">
+                    <div class="row_box">
+                        <select class="sel">
+                            <option>생활실</option>
+                        </select>
+                        <select class="sel">
+                            <option>입소자</option>
+                            <option>입소자입소</option>
+                        </select>
+                        <label class="checkbox">
+                            <input type="checkbox" >
+                            <span>퇴소자 포함</span>
+                        </label>
+                        <a href="#" class="btn bg_green ml_auto">목록보기</a>
+                    </div>
                 </div>
             </div>
-            <div class="txt_list2">
+            <div class="txt_list2 mt100">
                 <p class="color_orange"><i>*</i> 신규 수급자는 급여개시 전(입소당일 포함)에 실시합니다.</p>
             </div>
             <div class="form_title_box mt20">
@@ -90,7 +92,7 @@
                     <dt>감각인지정도</dt>
                     <dd>
                         <label class="btn_change">
-                            <input type="radio" name="c1">
+                            <input type="radio" name="c1" checked>
                             <span>1</span>
                         </label>
                         <label class="btn_change">
@@ -107,7 +109,7 @@
                         </label>
                         <div class="score ml_auto">
                             <strong>점수: </strong>
-                            <input type="text" style="width: 10vw;" class="input_text">
+                            <input type="text" value="1" readonly style="width: 10vw;" class="input_text">
                         </div>
                         <a href="javascript:;" class="btn_up ml_auto">
                             <img src="../../assets/img/icon_up_radius.png" alt="">
@@ -135,10 +137,250 @@
                     <dd>말로 지시하면 반응을 보이며 통증이나 불편감을 느끼고 말로 표현할 수 있다.</dd>
                 </dl>
             </div>
-
-        </div>
-
         
+
+            <div class="degree_list">
+                <dl>
+                    <dt>습기여부</dt>
+                    <dd>
+                        <label class="btn_change">
+                            <input type="radio" name="c2">
+                            <span>1</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c2" checked>
+                            <span>2</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c2">
+                            <span>3</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c2">
+                            <span>4</span>
+                        </label>
+                        <div class="score ml_auto">
+                            <strong>점수: </strong>
+                            <input type="text" value="2" readonly style="width: 10vw;" class="input_text">
+                        </div>
+                        <a href="javascript:;" class="btn_up ml_auto">
+                            <img src="../../assets/img/icon_up_radius.png" alt="">
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="degree_txts">
+                <dl>
+                    <dt>1.항상 젖어있음</dt>
+                    <dd>피부가 땀, 소변으로 항상 축축하다.</dd>
+                </dl>
+                <dl class="on">
+                    <dt>2.자주 젖어있음</dt>
+                    <dd>늘 축축한 것은 아니지만 자주 축축해져 8시간에 한번은 린넨을 갈아주어야 한다.</dd>
+                </dl>
+                <dl>
+                    <dt>3.가끔 젖어있음</dt>
+                    <dd>가끔 축축하다. 하루에 한번 정도 린넨 교환이 필요하다.</dd>
+                </dl>
+                <dl>
+                    <dt>4.거의 젖지않음</dt>
+                    <dd>피부는 보통 건조하며 린넨은 평상시대로만 교환해 주면 된다.</dd>
+                </dl>
+            </div>
+
+            <div class="degree_list">
+                <dl>
+                    <dt>활동상태</dt>
+                    <dd>
+                        <label class="btn_change">
+                            <input type="radio" name="c3">
+                            <span>1</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c3" checked>
+                            <span>2</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c3">
+                            <span>3</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c3">
+                            <span>4</span>
+                        </label>
+                        <div class="score ml_auto">
+                            <strong>점수: </strong>
+                            <input type="text" value="2" readonly style="width: 10vw;" class="input_text">
+                        </div>
+                        <a href="javascript:;" class="btn_up ml_auto">
+                            <img src="../../assets/img/icon_up_radius.png" alt="">
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="degree_txts">
+                <dl>
+                    <dt>1.항상 침대에만 누워 있음</dt>
+                    <dd>도움 없이는 몸은 물론 손, 발을 조금도 움직이지 못한다.</dd>
+                </dl>
+                <dl class="on">
+                    <dt>2.의자에 앉아 있을 수 있음 </dt>
+                    <dd>걸을 수 없거나 걷는 능력이 상당히 제한되어 있다. 체중 부하를 할 수 없어 의자나 휠체어로 이동시 도움을 필요로 한다.</dd>
+                </dl>
+                <dl>
+                    <dt>3.가끔 걸을 수 있음</dt>
+                    <dd>낮 동안에 도움을 받거나 도움 없이 매우 짧은 거리를 걸을 수 있다. 그러나 대부분의 시간은 침상이나 의자에서 보낸다.</dd>
+                </dl>
+                <dl>
+                    <dt>4.자주 걸을 수 있음 </dt>
+                    <dd>적어도 하루에 두 번 방 밖을 걷고, 방안은 적어도 2시간마다 걷는다.</dd>
+                </dl>
+            </div>
+
+            <div class="degree_list">
+                <dl>
+                    <dt>움직임</dt>
+                    <dd>
+                        <label class="btn_change">
+                            <input type="radio" name="c4">
+                            <span>1</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c4" checked>
+                            <span>2</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c4">
+                            <span>3</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c4">
+                            <span>4</span>
+                        </label>
+                        <div class="score ml_auto">
+                            <strong>점수: </strong>
+                            <input type="text" value="2" readonly style="width: 10vw;" class="input_text">
+                        </div>
+                        <a href="javascript:;" class="btn_up ml_auto">
+                            <img src="../../assets/img/icon_up_radius.png" alt="">
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="degree_txts">
+                <dl>
+                    <dt>1.완전히 못움직임</dt>
+                    <dd>도움 없이는 신체나 사지를 전혀 움직이지 못한다.</dd>
+                </dl>
+                <dl class="on">
+                    <dt>2.매우 제한됨</dt>
+                    <dd>신체나 사지의 체위를 가끔 조금 변경시킬 수 있지만 자주 하거나 많이 변경 시키지 못한다.</dd>
+                </dl>
+                <dl>
+                    <dt>3.약간 제한됨</dt>
+                    <dd>조금이기는 하지만 혼자서 신체나 사지의 체위를 자주 변경시킨다.</dd>
+                </dl>
+                <dl>
+                    <dt>4.제한없음</dt>
+                    <dd>도움 없이도 체위를 자주 변경시킨다.</dd>
+                </dl>
+            </div>
+
+            <div class="degree_list">
+                <dl>
+                    <dt>영양상태</dt>
+                    <dd>
+                        <label class="btn_change">
+                            <input type="radio" name="c5">
+                            <span>1</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c5" checked>
+                            <span>2</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c5">
+                            <span>3</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c5">
+                            <span>4</span>
+                        </label>
+                        <div class="score ml_auto">
+                            <strong>점수: </strong>
+                            <input type="text" value="2" readonly style="width: 10vw;" class="input_text">
+                        </div>
+                        <a href="javascript:;" class="btn_up ml_auto">
+                            <img src="../../assets/img/icon_up_radius.png" alt="">
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="degree_txts">
+                <dl>
+                    <dt>1.매우나쁨</dt>
+                    <dd>제공된 음식의 1/3 이하를 섭취한다. 단백질(고기나 유제품)을 하루에 2회 섭취량 이하를 먹는다. 수분을 잘 섭취 안한다. 유동성 영양보충액도 섭취하지 않는다. 또는 5일 이상 동안 금식상태이거나 유동식으로 유지한다.</dd>
+                </dl>
+                <dl class="on">
+                    <dt>2.부족함</dt>
+                    <dd>제공된 음식의 1/2를 먹는다. 단백질(고기나 유제품)은 하루에 약 3회 섭취량을 먹는다. 가끔 영양보충 식이를 섭취한다. 또는 유동식이나 위관영양을 적정량 미만으로 투여 받는다.</dd>
+                </dl>
+                <dl>
+                    <dt>3.적당함</dt>
+                    <dd>식사의 반 이상을 먹는다. 단백질(고기나 유제품)을 하루에 4회 섭취량을 먹는다. 가끔 식사를 거부하지만 보통 영양보충식이는 섭취한다. 또는 위관영양이나 TPN 으로 대부분의 영양요구량이 충족된다.</dd>
+                </dl>
+                <dl>
+                    <dt>4.양호함</dt>
+                    <dd>대부분의식사를 섭취하며 절대 거절하는 일이 없다. 단백질(고기나 유제품)을 하루에 4회 섭취량 이상을 먹으며 가끔 식간에도 먹는다. 영양보충 식이는 필요로 되지 않는다.</dd>
+                </dl>
+            </div>
+
+            <div class="degree_list">
+                <dl>
+                    <dt>마찰력/응전력</dt>
+                    <dd>
+                        <label class="btn_change">
+                            <input type="radio" name="c6">
+                            <span>1</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c6" checked>
+                            <span>2</span>
+                        </label>
+                        <label class="btn_change">
+                            <input type="radio" name="c6">
+                            <span>3</span>
+                        </label>
+                        <div class="score ml_auto">
+                            <strong>점수: </strong>
+                            <input type="text" value="2" readonly style="width: 10vw;" class="input_text">
+                        </div>
+                        <a href="javascript:;" class="btn_up ml_auto">
+                            <img src="../../assets/img/icon_up_radius.png" alt="">
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="degree_txts">
+                <dl>
+                    <dt>1.문제있음</dt>
+                    <dd>움직이는데 중정도 이상의 많은 도움을 필요로 한다. 린넨으로 끌어당기지 않고 완전히 들어 올리는 것은 불가능하다. 자주 침대나 의자에서 미끄러져 내려가 다시 제 위치로 옮기는데 많은 도움이 필요 된다. 관절구축이나 강직, 움직임 등으로 항상 마찰이 생긴다.</dd>
+                </dl>
+                <dl class="on">
+                    <dt>2.잠정적으로 문제있음</dt>
+                    <dd>자유로이 움직이나 약간의 도움을 필요로 한다. 움직이는 동안 의자억제대나 린넨 또는 다른 장비에 의해 마찰이 생길 수있다. 의자나 침대에서 대부분 좋은 체위를 유지하고 있지만 가끔은 미끄러져 내려온다.</dd>
+                </dl>
+                <dl>
+                    <dt>3.문제없음</dt>
+                    <dd>침대나 의자에서 자유로이 움직이며 움직일 때 스스로 자신을 들어 올릴 수 있을 정도로 충분한 근력이 있다. 침대나 의자에 누워 있을 때 항상 좋은 체위를 유지한다.</dd>
+                </dl>
+            </div>
+        </div>
         
         <div class="bottom_fixed_btn">
             <a href="#" class="bottom_btn bg_green">저장</a>
