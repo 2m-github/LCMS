@@ -35,6 +35,9 @@
 .color_blue {
     color: #5ab8e0 !important;
 }
+.color_black {
+    color: #292929 !important;
+}
 
 .full_size {
     width: 100% !important;
@@ -812,36 +815,7 @@ select {
                 color: #292929;
             }
         }
-        .state {
-            @include flexBox;
-            .state_radio {
-                @include flexBox;
-                position: relative;
-                width: vw(40px);
-                height: vw(40px);
-                border-radius: 50%;
-                overflow: hidden;
-                & + .state_radio {
-                    margin-left: vw(2px);
-                }
-                span {
-                    @include flexBox;
-                    @include absoluteLT();
-                    @include fullSize;
-                    color: #000;
-                    font-size: vw(20px);
-                    background: #e8e8e8;
-                }
-                input[type="radio"] {
-                    display: none;
-                    &:checked + span {
-                        color: #fff;
-                        background: $green;
-                    }
-                }
-            }
-            
-        }
+        
         dl.txts_list {
             width: 100%;
             display: flex;
@@ -866,6 +840,81 @@ select {
         
         &.flex_center {
             @include flexBox;
+        }
+        .tit_box {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            h3 {
+                padding-left: vw(20px);
+                margin-bottom: vw(15px);
+                color: #292929;
+                font-size: vw(22px);
+                i {
+                    color: #292929;
+                    font-size: vw(22px);
+                    margin-left: vw(-20px)
+                }
+            }
+            p {
+                width: 100%;
+                color: #808080;
+                text-align: center;
+            }
+        }
+        .tit_txt {
+
+        }
+    }
+    &.form_box2 {
+        padding: 0 !important;
+        .form_cont {
+            padding: vw(10px) vw(15px);
+            & + .form_cont {
+                border-left: 1px solid #c9c9c9;
+            }
+        }
+        .checkbox {
+            span {
+                color: #292929;
+            }
+        }
+    }
+}
+
+.state {
+    @include flexBox;
+    
+    
+}
+.state_radio {
+    @include flexBox;
+    margin: 0 auto;
+    position: relative;
+    width: vw(40px);
+    height: vw(40px);
+    border-radius: 50%;
+    overflow: hidden;
+    & + .state_radio {
+        margin-left: vw(2px);
+    }
+    .bg_gray {
+        color: #fff;
+        background: #828282;
+    }
+    span {
+        @include flexBox;
+        @include absoluteLT();
+        @include fullSize;
+        color: #000;
+        font-size: vw(20px);
+        background: #e8e8e8;
+    }
+    input[type="radio"] {
+        display: none;
+        &:checked + span {
+            color: #fff;
+            background: $green;
         }
     }
 }
@@ -909,6 +958,7 @@ select {
         width: vw(66px);
         color: #808080;
         font-size: vw(22px);
+        word-break: keep-all;
         & + .form_rowspan_cont {
             border-left: 1px solid #a3a3a3;
         } 
@@ -1174,6 +1224,9 @@ a.ui-button:active, .ui-button:active,
 .mt40 {
     margin-top: vw(40px) !important;
 }
+.mt80 {
+    margin-top: vw(80px) !important;
+}
 .mt100 {
     margin-top: vw(100px) !important;
 }
@@ -1182,6 +1235,9 @@ a.ui-button:active, .ui-button:active,
 }
 .mt220 {
     margin-top: vw(220px) !important;
+}
+.flex_auto {
+    flex: none !important;
 }
 .tbl01 {
     &.sticky {
@@ -2224,6 +2280,9 @@ a.ui-button:active, .ui-button:active,
 .justify_center {
     justify-content: center !important;
 }
+.align_center {
+    text-align: center !important;
+}
 
 .degree_list {
     padding: vw(15px) vw(15px);
@@ -2307,6 +2366,109 @@ a.ui-button:active, .ui-button:active,
             & + span {
                 color: #fff;
                 background: $green;
+            }
+        }
+    }
+}
+
+.banner_txt_box {
+    padding: vw(20px) vw(30px);
+    background: url('../img/bg_img01.png') no-repeat right vw(38px) bottom;
+    background-color: #f3f3f3;
+    background-size: vw(113px) vw(119px);
+    border-radius: vw(10px);
+    p {
+        color: #292929;
+        font-size: vw(22px);
+        font-weight: 400;
+        strong {
+            font-weight: 700;
+        }
+    }
+}
+
+.test_list {
+    width: 100%;
+    li {
+        display: flex;
+        align-items: center;
+        & + li {
+            margin-top: vw(15px);
+        }
+        p {
+            color: #808080;
+        }
+    }
+}
+.test_list2 {
+    display: flex;
+    width: 100%;
+    dt {
+        color: #292929;
+        font-size: vw(22px);
+        margin-right: vw(5px);
+    }
+    dd {
+        flex: 1;
+    }
+}
+
+.files_sel_box {
+    padding: vw(20px);
+    margin-top: vw(10px);
+    border: 1px solid #a3a3a3;
+    border-radius: vw(10px);
+    dl {
+        display: flex;
+        dt {
+            
+            margin-right: vw(30px);
+            .file_sel {
+                @include flexBox;
+                width: vw(100px);
+                height: vw(39px);
+                color: #292929;
+                font-size: vw(22px);
+                border-radius: vw(10px);
+                border: 1px solid #606060;
+                input {
+                    display: none;
+                }
+            }
+        }
+        dd {
+            width: 100%;
+            display: flex;
+            & > ul {
+                width: 100%;
+                li {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    & + li {
+                        margin-top: vw(10px);
+                    }
+                    p {
+                        padding-left: vw(43px);
+                        background: url('../img/icon_gallery.png') no-repeat 0 center;
+                        background-size: vw(27px) vw(22px);
+                        color: #292929;
+                        font-size: vw(22px);
+                    }
+                    span {
+                        margin-left: auto;
+                        color: #808080;
+                        font-size: vw(22px);
+                    }
+                    .file_delete {
+                        display: inline-block;
+                        width: vw(18px); 
+                        height: vw(18px); 
+                        margin-left: vw(15px);
+                        background: url('../img/btn_file_delete.png') no-repeat center center;
+                        background-size: cover;
+                    }
+                }
             }
         }
     }
