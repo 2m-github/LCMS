@@ -890,7 +890,9 @@ select {
     
 }
 .state_radio {
-    @include flexBox;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     position: relative;
     width: vw(40px);
@@ -1368,8 +1370,12 @@ a.ui-button:active, .ui-button:active,
     }
     .calendar_ctl {
         @include flexBox;
+        width: 68%;
         justify-content: space-between;
         margin: 0 auto;
+        &.auto_size {
+            width: auto;
+        }
         .calendar_sel {
             @include flexBox;  
             
